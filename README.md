@@ -1,34 +1,27 @@
 # MNIST Digit Classification using K-Nearest Neighbors (KNN)
 
 ## Problem Statement
-The goal of this project is to classify handwritten digits from the MNIST dataset using the K-Nearest Neighbors (KNN) algorithm. The dataset consists of grayscale images of digits (0-9), each represented as a 28x28 pixel grid. The challenge is to preprocess this high-dimensional dataset, optimize the model for accuracy, and evaluate its performance on a test set.
+The MNIST dataset consists of grayscale images of handwritten digits (0-9), each represented as a 28x28 pixel grid. The goal is to build a K-Nearest Neighbors (KNN) classifier to identify the digit in each image based on pixel intensity values. This involves preprocessing the high-dimensional dataset, tuning hyperparameters, and evaluating the model's accuracy on a test set.
 
 ## Objective
-This project demonstrates the use of KNN for digit classification, focusing on preprocessing, hyperparameter tuning, and model evaluation to achieve robust performance. The target accuracy is 97% or higher on the test set.
+This project demonstrates the application of the KNN algorithm for digit classification with a focus on preprocessing, feature selection, and cross-validation to achieve robust performance.
 
 ## Workflow
-1. **Data Preprocessing:**
-   - Loaded the MNIST dataset with 70,000 samples and 784 features per sample (28x28 pixels).
-   - Applied Min-Max Scaling to normalize feature values between 0 and 1.
-   - Removed low-variance features (<300 variance threshold) to reduce dimensionality.
-   
-2. **Feature Engineering:**
-   - Visualized feature variance to identify and drop low-information features.
-
-3. **Model Selection and Hyperparameter Tuning:**
-   - Used GridSearchCV with 5-fold cross-validation to tune hyperparameters:
-     - `n_neighbors`: Number of neighbors to consider.
-     - `weights`: Uniform or distance-based weighting.
-     - `metric`: Euclidean or Manhattan distance.
-   - Selected the best hyperparameters based on cross-validation accuracy.
-
-4. **Evaluation:**
-   - Achieved a test accuracy of 97.31%.
-   - Generated confusion matrix and classification report for detailed performance analysis.
+1. **Preprocess the MNIST dataset:**
+   - Normalize pixel intensity values using Min-Max Scaling.
+   - Remove low-variance features (<300 variance threshold) to reduce dimensionality and computational cost.
+2. **Perform hyperparameter tuning:**
+   - Use GridSearchCV with 5-fold cross-validation to optimize hyperparameters (`n_neighbors`, `weights`, and `metric`).
+3. **Evaluate the final model:**
+   - Test accuracy: 97.31%
+   - Precision, recall, and F1-scores exceed 0.97 for all classes.
 
 ## Results
-- **Final Test Accuracy:** 97.31%
-- Precision, recall, and F1-scores exceeded 0.97 for all digit classes.
+- **Test Accuracy:** 97.31%
+- The model shows robust performance with high precision, recall, and F1-scores for all digit classes.
 
-## File Outputs
-- **`best_knn_model.pkl`:** The trained KNN model with the best hyperparameters, saved for reuse.
+## Links
+- **GitHub Repository:** [ML MNIST Project](https://github.com/sashwattanay/ML-MNIST-project)
+
+## Repository Author
+**Name:** Sashwat Tanay
