@@ -35,8 +35,3 @@ This project demonstrates the use of KNN for digit classification, focusing on p
 
 ## Links
 - **GitHub Repository:** [MNIST KNN Classifier](https://github.com/sashwattanay/MNIST-KNN-Classifier)
-
-## How to Use
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/sashwattanay/MNIST-KNN-Classifier.git
