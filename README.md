@@ -34,4 +34,4 @@ This project demonstrates the use of KNN for digit classification, focusing on p
 - **`best_knn_model.pkl`:** The trained KNN model with the best hyperparameters, saved for reuse.
 
 ## Links
-- **GitHub Repository:** [MNIST KNN Classifier](https://github.com/sashwattanay/MNIST-KNN-Classifier)
+- **GitHub Repository:** [MNIST KNN Classifier](https://github.com/sashwattanay/ML-MNIST-project)
