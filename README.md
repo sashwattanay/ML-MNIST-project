@@ -19,9 +19,3 @@ This project demonstrates the application of the KNN algorithm for digit classif
 ## Results
 - **Test Accuracy:** 97.31%
 - The model shows robust performance with high precision, recall, and F1-scores for all digit classes.
-
-## Links
-- **GitHub Repository:** [ML MNIST Project](https://github.com/sashwattanay/ML-MNIST-project)
-
-## Repository Author
-**Name:** Sashwat Tanay
